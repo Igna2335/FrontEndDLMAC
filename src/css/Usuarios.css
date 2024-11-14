@@ -1,0 +1,49 @@
+/* Usuarios.css */
+
+/* El contenedor de usuarios debe ocupar toda la altura de la página */
+.usuarios-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+  }
+  
+  /* Área del contenido, desplazable si es necesario */
+  .content {
+    padding: 20px;
+    flex-grow: 1; /* Hace que el contenido ocupe el espacio restante después del Navbar */
+    overflow-y: auto; /* Permite que el contenido sea desplazable si es necesario */
+  }
+  
+  /* Estilos para el título */
+  .usuarios-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para la tabla */
+  .tabla-usuarios {
+    width: 100%;
+  }
+  
+  /* Estilos para el botón de nuevo usuario */
+  .btn-nuevo-usuario {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos del input en el diálogo */
+  .input-text {
+    width: 100%;
+  }
+  
+  /* Estilos para el botón de guardar */
+  .btn-guardar {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Estilos específicos de la tabla */
+  .p-datatable {
+    width: 100%;
+  }
+  

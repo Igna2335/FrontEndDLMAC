@@ -1,0 +1,29 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.login-page {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.p-field {
+  margin-bottom: 1.5rem;
+}
+
+button {
+  width: 100%;
+}
+
+
+#espacioNavbar{
+  margin-top: 100px;
+}

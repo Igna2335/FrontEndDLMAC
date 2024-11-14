@@ -1,0 +1,91 @@
+/* Contenedor de la página */
+.dashboard-page {
+    background-image: url('../img/mac1.jpeg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ocupa el 100% del alto de la ventana */
+    width: 100%; /* Ocupa el 100% del ancho */
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px; /* Deja espacio para el navbar */
+    color: white;
+    font-family: Arial, sans-serif;
+    position: relative; /* Para asegurar que se ocupe todo el alto */
+  }
+  
+  /* Contenedor del contenido del dashboard */
+  .dashboard-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro translúcido para mejor contraste */
+    padding: 40px;
+    border-radius: 15px;
+    width: 80%;
+    margin: 50px auto; /* Centrado del contenido */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1; /* Asegura que el contenido se quede sobre la imagen */
+  }
+  
+  /* Título principal */
+  .dashboard-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Texto del dashboard */
+  .dashboard-content p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  /* Estilos para el navbar (si no lo tienes en un archivo aparte, añádelo aquí) */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 20px;
+    z-index: 1000;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    display: inline;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar a:hover {
+    background-color: #555;
+  }
+  
+  /* Ajustes para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .dashboard-content {
+      width: 90%;
+      padding: 25px;
+    }
+  
+    .dashboard-content h1 {
+      font-size: 28px;
+    }
+  
+    .dashboard-content p {
+      font-size: 16px;
+    }
+  }
+  

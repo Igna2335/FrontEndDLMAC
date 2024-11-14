@@ -1,0 +1,69 @@
+/* Estilos para el contenedor del Navbar */
+.navbar-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Para asegurarse que el navbar esté por encima del contenido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #1E3A8A; /* Azul oscuro */
+  }
+  
+  /* Estilos personalizados para el Menubar */
+  .navbar {
+    display: flex;
+    justify-content: space-around; /* Distribuye las opciones del navbar de manera uniforme */
+    align-items: center;
+    background-color: #1E3A8A; /* Azul oscuro */
+    color: white;
+    padding: 0; /* Elimina el padding por defecto */
+  }
+  
+  /* Estilo para los elementos del menú */
+  .navbar .p-menuitem-link {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase; /* Mayúsculas para los nombres de los elementos */
+    padding: 15px 30px; /* Aumenta el espacio alrededor de las opciones */
+    transition: all 0.3s ease; /* Efecto de transición */
+    width: 100%; /* Hace que cada opción ocupe todo el navbar */
+    text-align: center;
+  }
+  
+  /* Efecto hover para las opciones */
+  .navbar .p-menuitem-link:hover {
+    background-color: #FF8C00; /* Naranja brillante */
+    color: white;
+    transform: scale(1.1); /* Aumenta el tamaño cuando el cursor pasa por encima */
+  }
+  
+  /* Estilo para los íconos de los elementos */
+  .navbar .pi {
+    margin-right: 8px; /* Espaciado entre el ícono y el texto */
+  }
+  
+  /* Estilo cuando el item es seleccionado */
+  .navbar .p-menuitem-link.p-highlight {
+    background-color: #F59E0B; /* Naranja suave para resaltar */
+  }
+  
+  /* Agregar espacio entre los elementos */
+  .navbar .p-menuitem {
+    margin: 0 10px;
+  }
+  
+  /* Media queries para hacerlo responsivo */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Los elementos del menú se apilan en pantallas más pequeñas */
+      padding: 10px 0; /* Menos padding en pantallas pequeñas */
+    }
+  
+    .navbar .p-menuitem-link {
+      font-size: 14px; /* Reducir el tamaño del texto */
+      padding: 12px 25px;
+      text-align: center;
+    }
+  }
+  

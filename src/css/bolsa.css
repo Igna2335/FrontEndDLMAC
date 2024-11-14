@@ -1,0 +1,99 @@
+/* Bolsas.module.css */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+  }
+  
+  .input {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    width: calc(50% - 20px);
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 1em;
+    transition: all 0.3s ease;
+  }
+  
+  .input:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  .button {
+    padding: 10px 15px;
+    color: #ff7e5f;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button:hover {
+    background-color: #feb47b;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .listItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .listItem:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .listItem span {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .listItem .button {
+    margin-left: 10px;
+  }
+  
