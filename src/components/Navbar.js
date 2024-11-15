@@ -8,7 +8,7 @@ const Navbar = () => {
     { label: 'Productos', icon: 'pi pi-box', command: () => window.location.pathname = '/productos' },
     { label: 'Cajas', icon: 'pi pi-briefcase', command: () => window.location.pathname = '/cajas' },
     { label: 'Bolsas', icon: 'pi pi-shopping-bag', command: () => window.location.pathname = '/bolsas' },
-    { label: 'Dashboard', icon: 'pi pi-chart-line', command: () => window.location.href = 'http://localhost:3001/dashboard' }, // Nueva opción para Dashboard
+    { label: 'Dashboard', icon: 'pi pi-chart-line', command: () => window.location.href = '/dashboard' }, // Nueva opción para Dashboard
     { label: 'Cerrar sesión', icon: 'pi pi-power-off', command: () => window.location.pathname = '/' } // Opción de cerrar sesión
   ];
 
