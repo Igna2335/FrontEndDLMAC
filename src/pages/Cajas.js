@@ -16,7 +16,7 @@ const Cajas = () => {
   const [isEditMode, setEditMode] = useState(false);
 
   // URL base para la API
-  const apiUrl = 'http://localhost:3000/api';
+  const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:3000/api';
 
   useEffect(() => {
     obtenerCajas();

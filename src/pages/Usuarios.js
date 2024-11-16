@@ -15,7 +15,7 @@ const Usuarios = () => {
   const [isDialogVisible, setDialogVisible] = useState(false);
   const [isEditMode, setEditMode] = useState(false);
 
-  const apiUrl = 'http://localhost:3000/api';
+  const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:3000/api';
 
   useEffect(() => {
     obtenerUsuarios();
